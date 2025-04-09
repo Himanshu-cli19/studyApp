@@ -1,0 +1,29 @@
+.forgot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  ion-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  .login-button {
+    --border-radius: 12px;
+    --background: rebeccapurple;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    font-size: 16px;
+    height: 50px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .login-button:hover {
+    transform: translateY(-2px);
+    --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-button:active {
+    transform: scale(0.98);
+  }

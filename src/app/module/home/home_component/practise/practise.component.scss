@@ -1,0 +1,147 @@
+:host {
+    --ion-color-primary: rebeccapurple;
+  }
+  
+  .home-page-content {
+    margin-top: 90px;
+    background: #f9f8ff;
+  }
+  
+  .greeting-section {
+    padding: 0 10px 20px 10px;
+  
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: rebeccapurple;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    padding: 0 10px 20px;
+  }
+  
+
+
+
+  .greeting-card {
+    background-color: rebeccapurple;
+    color: #fff;
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 55px;
+  
+  
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    ion-searchbar {
+        --background: #ffffff;
+        --color: #000000;
+        --border-radius: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subject-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(102, 51, 153, 0.1);
+    height: 150px;
+  
+    .card-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    //   opacity: 0.4;
+      z-index: 0;
+    }
+  
+    ion-card-header {
+      position: relative;
+    //   background: rebeccapurple;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+  
+    ion-card-title {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+  
+// ------------------------------
+
+.quick-access-slider {
+    margin: 20px 0;
+    height: 160px;
+  
+    ion-slide {
+      width: 45%; // allows 2 to be visible partially for slide preview
+    }
+  
+    .quick-card {
+      height: 140px;
+      border-radius: 16px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      box-shadow: 0 4px 8px rgba(102, 51, 153, 0.2);
+  
+      .card-overlay {
+        width: 100%;
+        background: rgba(102, 51, 153, 0.7); // rebeccapurple overlay
+        color: #fff;
+        padding: 10px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        text-align: center;
+  
+        h3 {
+          margin: 0;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  
+
+
+
+
+
+
+
+
+ 

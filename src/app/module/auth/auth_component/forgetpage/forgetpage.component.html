@@ -1,0 +1,24 @@
+<ion-content class="ion-padding">
+  
+  <div class="forgot-container">
+ 
+    <ion-card >
+      <ion-card-header>
+        <ion-card-title class="ion-text-center greed">Forgot Password</ion-card-title>
+      </ion-card-header>
+      
+
+      <ion-card-content>
+      <form [formGroup]="forgotForm" (ngSubmit)="onSendCode()">
+          <ion-item>
+            <ion-input  label="email" label-placement="floating" class="ion-margin-top" fill="outline" 
+            placeholder="email" formControlName="email"></ion-input>
+          </ion-item>
+
+            <ion-button expand="block" type="submit" class="login-button ion-margin-top">Send OTP</ion-button>
+        
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

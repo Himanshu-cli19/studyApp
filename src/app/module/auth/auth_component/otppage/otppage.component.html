@@ -1,0 +1,44 @@
+<ion-content class="ion-padding">
+  <div class="otp-container">
+    <h2 class="otp-heading">Please enter the OTP</h2>
+<form action=""  (ngSubmit)="submit()">
+    <!-- <form 
+    [formGroup]="otpForm" (ngSubmit)="onSubmitOtp()"> -->
+      <div class="otp-inputs">
+        <ion-input
+          #otpInput
+          type="tel"
+          maxlength="1"
+          formControlName="d1"
+          
+        ></ion-input>
+        <ion-input
+          #otpInput
+          type="tel"
+          maxlength="1"
+          formControlName="d2"
+          
+        ></ion-input>
+        <ion-input
+          #otpInput
+          type="tel"
+          maxlength="1"
+          formControlName="d3"
+         
+        ></ion-input>
+        <ion-input
+          #otpInput
+          type="tel"
+          maxlength="1"
+          formControlName="d4"
+         
+        ></ion-input>
+      </div>
+
+      <ion-button expand="block" type="submit"  class="ion-margin-top login-button" >
+        Submit OTP
+      </ion-button>
+    </form>
+  </div>
+</ion-content>
+

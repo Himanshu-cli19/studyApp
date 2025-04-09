@@ -1,0 +1,48 @@
+<ion-content class="ion-padding">
+  <div class="signup-container">
+    <h1 class="heading">Hello There,</h1>
+
+    <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+      <ion-card>
+        <ion-card-content>
+
+          <ion-item>
+            <ion-label position="floating">Name</ion-label>
+            <ion-input type="text" formControlName="name"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+
+          <ion-button expand="block" type="submit" class="ion-margin-top" [disabled]="signupForm.invalid">
+            Sign Up
+          </ion-button>
+
+        </ion-card-content>
+      </ion-card>
+    </form>
+  </div>
+  <div class="divider">
+    <span>OR CONTINUE WITH</span>
+  </div>
+  
+  <!-- Social Login Buttons -->
+  <div class="social-buttons">
+    <ion-button fill="outline" color="primary" (click)="onFacebookSignup()">
+      <ion-icon name="logo-facebook" slot="start"></ion-icon>
+      Facebook
+    </ion-button>
+  
+    <ion-button fill="outline" color="danger" (click)="onGoogleSignup()">
+      <ion-icon name="logo-google" slot="start"></ion-icon>
+      Google
+    </ion-button>
+  </div>
+</ion-content>

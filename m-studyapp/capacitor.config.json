@@ -1,0 +1,10 @@
+{
+  "appId": "com.studyapp.app",
+  "appName": "StudyApp",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}

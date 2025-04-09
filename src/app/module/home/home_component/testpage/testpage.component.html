@@ -1,0 +1,37 @@
+<ion-header class="mh">
+  <ion-toolbar color="primary">
+    <ion-title>Take a Test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding test-page-content">
+  <h2 class="section-heading">Mathematics Tests</h2>
+
+  <ion-card *ngFor="let test of mathTests">
+    <ion-card-header>
+      <ion-card-title>{{ test.title }}</ion-card-title>
+      <ion-card-subtitle>{{ test.level }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ test.description }}
+      <ion-button expand="block" size="small" color="primary" class="start-button">
+        Start Test
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <h2 class="section-heading">Science Tests</h2>
+
+  <ion-card *ngFor="let test of scienceTests">
+    <ion-card-header>
+      <ion-card-title>{{ test.title }}</ion-card-title>
+      <ion-card-subtitle>{{ test.level }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ test.description }}
+      <ion-button expand="block" size="small" color="primary" class="start-button">
+        Start Test
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

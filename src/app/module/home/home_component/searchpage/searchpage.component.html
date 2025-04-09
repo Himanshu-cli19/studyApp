@@ -1,0 +1,78 @@
+
+<ion-header class="mh" >
+  <ion-toolbar color="primary">
+    <ion-title>Explore Learning</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding search-page-content">
+  <ion-searchbar placeholder="Search courses, lessons, tests..." animated></ion-searchbar>
+
+  <div class="section">
+    <h2>Courses</h2>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Math Mastery</ion-card-title>
+        <ion-card-subtitle>Algebra, Geometry & more</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Dive into interactive lessons to master your math skills.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Science Essentials</ion-card-title>
+        <ion-card-subtitle>Physics, Chemistry, Biology</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Explore experiments, animations, and deep concepts.
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="section">
+    <h2>Tests</h2>
+    <ion-list>
+      <ion-item>
+        <ion-label>Mock Test - Class 10</ion-label>
+        <ion-button fill="outline" slot="end" size="small">Start</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label>Weekly Challenge</ion-label>
+        <ion-button fill="outline" slot="end" size="small">Attempt</ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="section">
+    <h2>Lessons</h2>
+    <ion-chip outline color="primary">Quadratic Equations</ion-chip>
+    <ion-chip outline color="primary">Cell Structure</ion-chip>
+    <ion-chip outline color="primary">Periodic Table</ion-chip>
+  </div>
+
+  <div class="section">
+    <h2>Syllabus</h2>
+    <ion-accordion-group expand="first">
+      <ion-accordion value="first">
+        <ion-item slot="header">
+          <ion-label>Mathematics</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Algebra, Geometry, Trigonometry
+        </div>
+      </ion-accordion>
+
+      <ion-accordion value="second">
+        <ion-item slot="header">
+          <ion-label>Science</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Physics, Chemistry, Biology
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </div>
+</ion-content>

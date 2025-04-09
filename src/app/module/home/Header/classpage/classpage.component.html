@@ -1,0 +1,29 @@
+<ion-content class="ion-padding">
+  <!-- Header -->
+  <div class="header">
+    <h2>Select your class</h2>
+  </div>
+
+  <!-- Card List -->
+  <div *ngFor="let card of cards;let i = index" class="card-wrapper">
+    <ion-card>
+      <ion-item lines="none">
+        <!-- Icon -->
+        <ion-icon name="school-outline" slot="start" class="card-icon"></ion-icon>
+
+        <!-- Title -->
+        <ion-label>{{ card.title }}</ion-label>
+
+        <!-- Checkbox -->
+        <ion-checkbox slot="end" shape="round"  [checked]="card.selected"
+        (ionChange)="selectOnlyOne(i)"></ion-checkbox>
+      </ion-item>
+    </ion-card>
+  </div>
+  <ion-footer class="footer-button">
+    <ion-button expand="block" class="lets-go-btn" (click)="letsgo()">
+      Let's Go
+    </ion-button>
+  </ion-footer>
+</ion-content>
+

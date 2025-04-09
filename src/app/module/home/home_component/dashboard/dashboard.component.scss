@@ -1,0 +1,41 @@
+// .one
+// {
+//     margin-top: 60px;
+    
+// }
+.two {
+  --padding-top: 40px;
+}
+
+
+
+.welcome-text {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+    
+  }
+  
+  .sub-text {
+    text-align: center;
+    color: var(--ion-color-medium);
+    margin-bottom: 20px;
+  }
+  
+  ion-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  }
+  
+  ion-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  ion-card-title {
+    font-size: 20px;
+    font-weight: 600;
+  }

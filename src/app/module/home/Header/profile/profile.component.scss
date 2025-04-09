@@ -1,0 +1,122 @@
+:host {
+    --blueviolet: #8A2BE2;
+    
+  }
+  
+//   .profile-header {
+//     background-color: var(--blueviolet);
+//     color: white;
+//     padding: 30px 16px 16px;
+//     text-align: center;
+//     position: relative;
+//   }
+  .profile-header {
+    background-color: var(--blueviolet);
+    color: white;
+    padding: 24px 16px;
+    text-align: center;
+    position: relative;
+    // border-bottom-left-radius: 24px;
+    // border-bottom-right-radius: 24px;
+    border-radius: 24px;
+    margin: 10px;
+  }
+  
+  .avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  
+  .avatar-icon {
+    font-size: 100px;
+    color: var(--blueviolet);
+  }
+  
+  .student-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .student-info p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .icon-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 16px;
+    
+  }
+  
+  .icon-box {
+    background: white;
+    color: var(--blueviolet);
+    padding: 12px;
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-wrapper {
+    padding: 16px;
+    background-color:blueviolet;
+    border-radius: 12px;
+    margin: 10px;
+  }
+  
+  ion-card {
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(137, 43, 226, 0.1);
+  }
+  
+  ion-card h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--blueviolet);
+  }
+  
+  ion-card p {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .left-icon {
+    color: var(--blueviolet);
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .right-icon {
+    color: var(--blueviolet);
+    font-size: 20px;
+  }
+  .back-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 24px;
+    color: white;
+    z-index: 10;
+  }
+  

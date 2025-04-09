@@ -1,0 +1,48 @@
+.otp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .otp-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  ion-input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    --padding-start: 0;
+    --padding-end: 0;
+    --border-radius: 10px;
+    border: 1px solid var(--ion-color-medium);
+  }
+  .login-button {
+    --border-radius: 12px;
+    --background: rebeccapurple;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    font-size: 16px;
+    height: 50px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .login-button:hover {
+    transform: translateY(-2px);
+    --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-button:active {
+    transform: scale(0.98);
+  }

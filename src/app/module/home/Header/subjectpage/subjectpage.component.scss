@@ -1,0 +1,51 @@
+ion-content {
+    --padding-bottom: 80px; // Prevent last card from hiding behind footer
+  }
+  
+  .header {
+    // margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  
+    h2 {
+      color: blueviolet;
+      font-weight: 600;
+    }
+  }
+  
+  .card-wrapper {
+    margin-bottom: 12px;
+  
+    ion-card {
+      border-radius: 14px;
+      box-shadow: 0 2px 6px rgba(137, 43, 226, 0.2);
+    }
+  
+    ion-card-title {
+      font-size: 1.2rem;
+      color: blueviolet;
+      font-weight: bold;
+    }
+  
+    ion-card-subtitle {
+      color: #666;
+    }
+  }
+  
+  .footer-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background: #fff;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .next-btn {
+    --background: blueviolet;
+    color: white;
+    font-weight: bold;
+    --border-radius: 12px;
+  }
+  

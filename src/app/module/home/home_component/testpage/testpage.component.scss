@@ -1,0 +1,28 @@
+.mh
+{
+  margin-top: 60px;
+}
+
+:host {
+    --ion-color-primary: rebeccapurple;
+  }
+  
+  .test-page-content {
+    background: #f8f8fc;
+  }
+  
+  .section-heading {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: var(--ion-color-primary);
+    font-weight: bold;
+  }
+  
+  ion-card {
+    margin-bottom: 15px;
+  }
+  
+  .start-button {
+    margin-top: 10px;
+  }
+  

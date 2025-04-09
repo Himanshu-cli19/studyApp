@@ -1,0 +1,39 @@
+.one
+{
+--padding-top: 58px; 
+}
+
+:host {
+    --ion-color-primary: rebeccapurple;
+  }
+  
+  .account-page-content {
+    background: #f7f6fb;
+  }
+  
+  .profile-section {
+    margin: 20px 0;
+  }
+  
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 3px solid var(--ion-color-primary);
+  }
+  
+  ion-label h2 {
+    font-weight: 600;
+    color: #444;
+  }
+  
+  ion-label p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 4px;
+  }
+  
+  .action-btn {
+    margin-top: 20px;
+  }
+  

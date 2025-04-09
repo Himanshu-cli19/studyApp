@@ -1,0 +1,59 @@
+
+<ion-content class="ion-padding">
+  <ion-segment>
+    <ion-segment-button value="first">
+      <ion-label>Login</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="second" 
+     (click)="onSignup()">
+      <ion-label>SignUp</ion-label>
+    </ion-segment-button>
+   
+  </ion-segment>
+  <!-- <ion-content class="ion-padding" >
+  <ion-segment value="default">
+    <ion-segment-button value="default" >
+      <ion-label >Login</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment"  (click)="onSignup()">
+      <ion-label>SignUp</ion-label>
+    </ion-segment-button>
+  </ion-segment> -->
+
+
+  <form [formGroup]="loginForm" (ngSubmit)="onlogin()">
+
+    <ion-input  label="Username" label-placement="floating" class="ion-margin-top" fill="outline" placeholder="username" formControlName="username"></ion-input>
+
+
+    <ion-input type="password" label="Password" class="ion-margin-top" label-placement="floating" fill="outline" placeholder="password" formControlName="password">
+      <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-input>
+
+    <div class="forgot-password">
+      <a (click)="onForgotPassword()">Forgot Password?</a>
+    </div>
+
+    <ion-button expand="block" type="submit" class="login-button ion-margin-top">Login</ion-button>
+ 
+  </form>
+
+  <div class="divider">
+    <span>OR CONTINUE WITH</span>
+  </div>
+
+  <div class="social-buttons">
+    <ion-button fill="outline" color="primary" (click)="onFacebookSignup()">
+      <ion-icon name="logo-facebook" slot="start"></ion-icon>
+      Facebook
+    </ion-button>
+  
+    <ion-button fill="outline" color="danger" (click)="onGoogleSignup()">
+      <ion-icon name="logo-google" slot="start"></ion-icon>
+      Google
+    </ion-button>
+  </div>
+</ion-content>
