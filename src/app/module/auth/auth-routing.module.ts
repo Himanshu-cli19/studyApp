@@ -4,10 +4,15 @@ import { LoginpageComponent } from './auth_component/loginpage/loginpage.compone
 import { SignuppageComponent } from './auth_component/signuppage/signuppage.component';
 import { ForgetpageComponent } from './auth_component/forgetpage/forgetpage.component';
 import { OtppageComponent } from './auth_component/otppage/otppage.component';
+import { SegmentpageComponent } from './auth_component/segmentpage/segmentpage.component';
 
 const routes: Routes = [
   {
     path:'',
+    component:SegmentpageComponent
+  },
+  {
+    path:'login',
     component:LoginpageComponent
   },
   {
@@ -21,7 +26,8 @@ const routes: Routes = [
   {
     path:'otp',
     component:OtppageComponent
-  }
+  },
+  
 ];
 
 @NgModule({

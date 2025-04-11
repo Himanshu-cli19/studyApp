@@ -120,3 +120,12 @@
     z-index: 10;
   }
   
+  ion-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  ion-avatar img {
+    border: 2px solid blueviolet;
+    border-radius: 50%; // just to be safe
+  }
+    

@@ -9,6 +9,7 @@ import { PractiseComponent } from './home_component/practise/practise.component'
 import { ClasspageComponent } from './Header/classpage/classpage.component';
 import { SubjectpageComponent } from './Header/subjectpage/subjectpage.component';
 import { ProfileComponent } from './Header/profile/profile.component';
+import { DemoComponent } from './Header/demo/demo.component';
 
 const routes: Routes = [
   {path:'', component:HomePage,
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path:'class',  component:ClasspageComponent},
   {path:'subject', component:SubjectpageComponent},
   {path:'profile',component:ProfileComponent},
+  {path:'demo',component:DemoComponent}
   
   
 ];

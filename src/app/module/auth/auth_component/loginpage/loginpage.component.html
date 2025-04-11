@@ -1,29 +1,11 @@
 
 <ion-content class="ion-padding">
-  <ion-segment>
-    <ion-segment-button value="first">
-      <ion-label>Login</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="second" 
-     (click)="onSignup()">
-      <ion-label>SignUp</ion-label>
-    </ion-segment-button>
-   
-  </ion-segment>
-  <!-- <ion-content class="ion-padding" >
-  <ion-segment value="default">
-    <ion-segment-button value="default" >
-      <ion-label >Login</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="segment"  (click)="onSignup()">
-      <ion-label>SignUp</ion-label>
-    </ion-segment-button>
-  </ion-segment> -->
-
 
   <form [formGroup]="loginForm" (ngSubmit)="onlogin()">
 
-    <ion-input  label="Username" label-placement="floating" class="ion-margin-top" fill="outline" placeholder="username" formControlName="username"></ion-input>
+    <ion-input  label="Username" label-placement="floating" class="ion-margin-top" fill="outline" placeholder="username" formControlName="username">
+      <ion-button fill="clear" slot="end" aria-label="Show/hide"> </ion-button>
+    </ion-input>
 
 
     <ion-input type="password" label="Password" class="ion-margin-top" label-placement="floating" fill="outline" placeholder="password" formControlName="password">

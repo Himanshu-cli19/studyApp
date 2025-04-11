@@ -1,0 +1,138 @@
+<!-- <ion-header class="mh">
+  <ion-toolbar color="primary">
+    <ion-title>Take a Test</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <!-- Horizontal Row Layout -->
+  
+  <ion-header  class="mone">
+  <ion-toolbar >
+    <ion-card-header >
+      <ion-title  class="ion-text-center" color="primary">Horizontal Layout (Row)</ion-title>
+    </ion-card-header>
+  </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    
+    <ion-card-content>
+      <div class="ion-direction-row ion-justify-between ion-align-center">
+        <ion-avatar><img src="https://i.pravatar.cc/40?img=1" /></ion-avatar>
+        <ion-button color="primary">Action</ion-button>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Vertical Column Layout -->
+  <ion-card>
+    <ion-card-header class="ion-text-end">
+      <ion-card-title>Vertical Layout (Column)</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="ion-direction-column ion-align-center ion-justify-center">
+        <ion-avatar><img src="https://i.pravatar.cc/40?img=2" /></ion-avatar>
+        <ion-text class="ion-margin-top">Username</ion-text>
+        <ion-button color="primary">Follow</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Responsive Layout -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Responsive Direction</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="ion-direction-column ion-direction-row-md ion-justify-around ion-align-center">
+        <ion-icon name="home-outline" size="large"></ion-icon>
+        <ion-icon name="person-outline" size="large"></ion-icon>
+        <ion-icon name="settings-outline" size="large"></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Text Direction & Alignment -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Text Alignment</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text class="ion-text-left"><p>Left aligned text</p></ion-text>
+      <ion-text class="ion-text-center"><p>Center aligned text</p></ion-text>
+      <ion-text class="ion-text-right"><p>Right aligned text</p></ion-text>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card class="hover-card">
+    <ion-card-header>
+      <ion-card-title>Hover Me!</ion-card-title>
+      <ion-card-subtitle>With cool animation</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      This card lifts and glows when you hover over it. Add anything you want here.
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="hover-expand-card margin-bottom">
+    <ion-card-header>
+      <ion-card-title>Hover to Expand</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      This card grows when hovered. It's all CSS magic!
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+
+
+<ion-card class="expandable-card " (click)="toggleCard()" >
+  <ion-card-header class=>
+    <ion-card-title>
+      Tap to Expandhdnkjs
+    </ion-card-title>
+    <ion-icon 
+      [name]="isExpanded ? 'chevron-up' : 'chevron-down'" 
+      class="chevron-icon">
+    </ion-icon>
+  </ion-card-header>
+  
+
+  <ion-card-content [class.expanded]="isExpanded">
+    <div class="preview">
+      This is always visible.
+    </div>
+
+    <div class="extra-content" *ngIf="isExpanded">
+      This content is revealed when you expand the card. You can put lists, text, or even buttons here!
+    </div>
+  </ion-card-content>
+
+
+    
+
+
+
+
+<!-- <ion-card color="primary"> -->
+<!-- <ion-card class="hover-expand-card margin-bottom"></ion-card>
+<ion-select interface="popover"  class="custom-placeholder-select" placeholder="Select one">
+  <ion-select-option value="apple">Apple</ion-select-option>
+  <ion-select-option value="banana">Banana</ion-select-option>
+</ion-select>
+<ion-select interface="popover">
+  <ion-select-option value="1">One</ion-select-option>
+</ion-select>
+<ion-select interface="alert">
+  <ion-select-option value="1">One</ion-select-option>
+</ion-select>
+<ion-select interface="action-sheet">
+  <ion-select-option value="1">One</ion-select-option>
+</ion-select>
+</ion-card> -->
+

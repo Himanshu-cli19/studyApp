@@ -53,4 +53,9 @@ profile()
 {
   this.myrouter.navigate(['./home/profile'])
 }
+
+demo()
+{
+  this.myrouter.navigate(['./home/demo'])
+}
 }

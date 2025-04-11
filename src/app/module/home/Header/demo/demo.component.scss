@@ -1,0 +1,78 @@
+:root {
+    --ion-color-primary: #8A2BE2; // BlueViolet Theme
+  }
+
+  .hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    // transform: scale(1.03);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 20px rgba(138, 43, 226, 0.3); // BlueViolet shadow
+    }
+  }
+
+
+
+
+
+
+
+
+  .expandable-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    // margin: 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  
+    ion-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .chevron-icon {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+  
+    .expanded + .chevron-icon {
+      transform: rotate(180deg);
+    }
+  
+    ion-card-content {
+      transition: max-height 0.3s ease-in-out;
+      overflow: hidden;
+  
+      .extra-content {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+
+
+  
+  .hover-expand-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(138, 43, 226, 0.3); // BlueViolet glow
+      border: 1px solid var(--ion-color-primary);
+    }
+  }
+  ion-select.custom-placeholder-select::part(placeholder) {
+    color: crimson; /* or use any custom red */
+    font-weight: bold;
+  }
+  

@@ -29,6 +29,12 @@
   }
   .greed{
     text-align: center;
+    background: rebeccapurple;
+    border-radius: 12px;
+    color: white;
+  }
+  .greed-text{
+    padding: 5px;
   }
   .social-buttons {
     display: flex;
@@ -65,3 +71,24 @@
   ion-segment-content:nth-of-type(3) {
     background: lightgreen;
   }
+
+  // .custom-bg {
+  //   --background: #8a2be2; // blueviolet
+  //   color: white;
+  // }
+  
+  // .heading {
+  //   text-align: center;
+  //   font-size: 24px;
+  //   font-weight: bold;
+  //   margin-bottom: 24px;
+  // }
+  
+  // .form-container {
+  //   max-width: 600px;
+  //   margin: auto;
+  // }
+  // .rounded {
+  //   border-radius: 12px;
+  // }
+  

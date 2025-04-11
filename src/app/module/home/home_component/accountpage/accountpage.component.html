@@ -43,5 +43,26 @@
   <ion-button expand="block" color="medium" class="action-btn">
     Logout
   </ion-button>
+<!-- </ion-content> -->
+
+
+
+
+
+
+  <div class="slider-container">
+    <div class="slider-wrapper">
+      <ion-card *ngFor="let item of items">
+        <img [src]="item.image" />
+        <ion-card-header>
+          <ion-card-title>{{ item.title }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ item.description }}
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
 </ion-content>
+
 

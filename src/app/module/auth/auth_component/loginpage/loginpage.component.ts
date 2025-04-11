@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { IonContent, IonLabel, IonInput, IonCardTitle, IonButton } from "@ionic/angular/standalone";
-import { FormGroup ,ReactiveFormsModule,FormControl} from '@angular/forms';
+// import { IonContent, IonLabel, IonInput, IonCardTitle, IonButton } from "@ionic/angular/standalone";
+import { FormGroup ,ReactiveFormsModule,FormControl, FormBuilder} from '@angular/forms';
 import { Router } from '@angular/router';
-import { NgStyle } from '@angular/common';
+import { UserserviceService } from 'src/Service/userservice.service';
+import { Logininterface } from 'src/Interfaces/logininterface';
+
+
 
 @Component({
   selector: 'app-loginpage',
@@ -10,40 +13,58 @@ import { NgStyle } from '@angular/common';
   styleUrls: ['./loginpage.component.scss'],
   standalone:false
 })
-export class LoginpageComponent  {
+export class LoginpageComponent implements OnInit  {
+  loginForm !: FormGroup
 
-  constructor( private myroute:Router) {}
+  constructor( private myroute:Router, private _formbulder: FormBuilder, private myservice:UserserviceService) {}
 
-     loginForm =new FormGroup({
+  ngOnInit(): void {
+    this.loginForm = this._formbulder.group({
 
-    username:new FormControl(''),
-    password:new FormControl('')
-  });
+      username:[''],
+      password:['']
+    });
+  
+  }
 
- 
 
   onlogin()
     {
-      console.log(this.loginForm.value)
-      if(this.loginForm.controls.username.value==''||this.loginForm.controls.password.value=='' )
-      {
-        alert('required fields are empty!!')
+      // try{
+      console.log(this.loginForm.value);
+      const data:Logininterface = {
+        userid:this.loginForm.get('username')?.value || '',
+        password:this.loginForm.get('password')?.value || ''
+      };
+      
+      this.myservice.loginapi(data).subscribe((res: any)=>{ 
+
+        if(res.status=== true)
+        {
+          console.log('login done', res);
+         
+       
+        }
+        else (res.status === false) 
+        {
+          console.log('failed')
+        }
         
-      }
-      if(this.loginForm.controls.username.value=='admin@123'||this.loginForm.controls.password.value=='123' )
-      {this.myroute.navigate(['/home'])}
+      })
         
-      else{
-        alert('invalid email and password')
-      }
+
+   
+      
     }   
+
+    
 
  
 
-  onSignup() {
-    console.log('Navigate to signup');
-    {this.myroute.navigate(['/auth/signup'])}
-  }
+  // onSignup() {
+  //   console.log('Navigate to signup');
+  //   {this.myroute.navigate(['/auth/signup'])}
+  // }
 
   onForgotPassword() {
     console.log('Forgot password clicked');
@@ -61,3 +82,5 @@ export class LoginpageComponent  {
 
 
 }
+
+

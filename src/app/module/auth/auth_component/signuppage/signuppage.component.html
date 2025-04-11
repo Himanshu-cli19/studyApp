@@ -1,49 +1,61 @@
-<ion-content class="ion-padding">
-  <ion-segment>
-   
-    <ion-segment-button value="first"  (click)="onLogin()">
-      <ion-label>Login</ion-label>
-      
-    </ion-segment-button>
-    <ion-segment-button value="second"  (click)="onSignup()">
-      <ion-label>SignUp</ion-label>
-    </ion-segment-button>
-   
-   
-  </ion-segment>
-  <!-- <ion-segment-view>
-    <ion-segment-content id="first">Login</ion-segment-content>
-    <ion-segment-content id="second">SignUp</ion-segment-content>
-    
-  </ion-segment-view> -->
-  <!-- <ion-segment value="default">
-    <ion-segment-button value="default" (click)="onLogin()">
-      <ion-label>Login</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="segment"  (click)="onSignup()">
-      <ion-label>SignUp</ion-label>
-    </ion-segment-button>
-  </ion-segment> -->
-<div class="greed">
-  <h1>Welcome Learner,</h1>
-  <p>Good to see you</p>
-</div>
+<ion-content class="ion-padding ">
+
+
+  <div class="greed ">
+    <h1 class="greed-text">Welcome</h1>
+    <p class="greed-text">Good to see you</p>
+  </div>
 
   <form [formGroup]=" signupForm" (ngSubmit)="onSignup()">
 
-    <ion-input  label="Username" label-placement="floating" fill="outline" placeholder="username" formControlName="username" ></ion-input>
-    <ion-input  label="EmailId" class="ion-margin-top" label-placement="floating" fill="outline" placeholder="email" formControlName="email" ></ion-input>
+    <ion-input type="text" label="Client Name" label-placement="floating" fill="outline" placeholder="Client Name"
+      formControlName="clientname"></ion-input>
 
-    <ion-input type="password" label="Password" class="ion-margin-top" label-placement="floating" fill="outline"s placeholder="password" formControlName="password">
+    <ion-input type="email" label="EmailId" class="ion-margin-top" label-placement="floating" fill="outline" placeholder="email"
+      formControlName="email"></ion-input>
+
+    <ion-input type="tel" formControlName="contactnumber" class="ion-margin-top" label="Contact Number"
+      label-placement="floating" fill="outline" placeholder="Contact Number"
+      formControlName="contactnumber"></ion-input>
+
+    <ion-input type="password" label="Password" class="ion-margin-top" label-placement="floating" fill="outline" s
+      placeholder="password" formControlName="password">
       <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
       <ion-button fill="clear" slot="end" aria-label="Show/hide">
         <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
       </ion-button>
     </ion-input>
 
-   
-    <ion-button expand="block" type="submit" class="login-button ion-margin-top">Login</ion-button>
- 
+
+
+
+    <ion-select label="State" fill="outline" formControlName="state" class="ion-margin-top" 
+    label-placement="floating"
+      (ionChange)="getCity($event)">
+      <ion-select-option *ngFor="let st of statevar" [value]="st.Id">{{st.name}}</ion-select-option>
+    </ion-select>
+
+    <ion-select label="City" fill="outline" formControlName="city" class="ion-margin-top" 
+    label-placement="floating">
+      <ion-select-option *ngFor="let ct of cityvar" [value]="ct.Id">{{ct.name}}</ion-select-option>
+    </ion-select>
+
+
+    <ion-textarea formControlName="address" fill="outline" label="Address" label-placement="floating"
+      class="ion-margin-top"></ion-textarea>
+
+
+    <ion-select formControlName="gender" label="Gender" fill="outline" label-placement="floating"
+      class="ion-margin-top">
+      <ion-select-option value="Male">Male</ion-select-option>
+      <ion-select-option value="Female">Female</ion-select-option>
+      <ion-select-option value="Others">Others</ion-select-option>
+
+    </ion-select>
+
+
+    <ion-button expand="block" type="submit" class="login-button ion-margin-top ">Signup</ion-button>
+
   </form>
 
   <div class="divider">

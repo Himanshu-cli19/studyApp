@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, Validators } from '@angular/forms';
 import { HomePage } from './home.page';
 
 
@@ -18,6 +18,7 @@ import { PractiseComponent } from './home_component/practise/practise.component'
 import { ClasspageComponent } from './Header/classpage/classpage.component';
 import { SubjectpageComponent } from './Header/subjectpage/subjectpage.component';
 import { ProfileComponent } from './Header/profile/profile.component';
+import { DemoComponent } from './Header/demo/demo.component';
 
 
 
@@ -28,6 +29,7 @@ import { ProfileComponent } from './Header/profile/profile.component';
     IonicModule,
     HomePageRoutingModule,
     RouterOutlet,
+   
     
     
     
@@ -36,6 +38,6 @@ import { ProfileComponent } from './Header/profile/profile.component';
 ],
   declarations: [HomePage, DashboardComponent,TestpageComponent,SearchpageComponent,
     AccountpageComponent,PractiseComponent,ClasspageComponent,SubjectpageComponent,
-  ProfileComponent]
+  ProfileComponent,DemoComponent]
 })
 export class HomePageModule {}

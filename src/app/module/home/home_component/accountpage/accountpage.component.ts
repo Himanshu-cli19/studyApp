@@ -23,5 +23,27 @@ export class AccountpageComponent  implements OnInit {
   }
 
   ngOnInit() {}
+  items = [
+    {
+      title: 'Card 1',
+      image: 'https://via.placeholder.com/200x150',
+      description: 'This is the first card.'
+    },
+    {
+      title: 'Card 2',
+      image: 'https://via.placeholder.com/200x150',
+      description: 'This is the second card.'
+    },
+    {
+      title: 'Card 3',
+      image: 'https://via.placeholder.com/200x150',
+      description: 'This is the third card.'
+    },
+    {
+      title: 'Card 4',
+      image: 'https://via.placeholder.com/200x150',
+      description: 'This is the fourth card.'
+    }
+  ];
 
 }
